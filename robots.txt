@@ -1,0 +1,15 @@
+# robots.txt for Puri Beach Resort
+# Allow all search engines to crawl the site
+
+User-agent: *
+Allow: /
+
+# Disallow specific directories if any
+# Disallow: /admin/
+# Disallow: /private/
+
+# Sitemap location
+Sitemap: https://puribeach-resort.com/sitemap.xml
+
+# Crawl-delay (optional - helps prevent overloading the server)
+# Crawl-delay: 1

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Homepage -->
+    <url>
+        <loc>https://puribeach-resort.com/</loc>
+        <lastmod>2025-04-21</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <!-- About Section -->
+    <url>
+        <loc>https://puribeach-resort.com/#about</loc>
+        <lastmod>2025-04-21</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Services Section -->
+    <url>
+        <loc>https://puribeach-resort.com/#services</loc>
+        <lastmod>2025-04-21</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Gallery Section -->
+    <url>
+        <loc>https://puribeach-resort.com/#gallery</loc>
+        <lastmod>2025-04-21</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Testimonials Section -->
+    <url>
+        <loc>https://puribeach-resort.com/#testimonials</loc>
+        <lastmod>2025-04-21</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <!-- FAQ Section -->
+    <url>
+        <loc>https://puribeach-resort.com/#faq</loc>
+        <lastmod>2025-04-21</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <!-- Blog Page -->
+    <url>
+        <loc>https://puribeach-resort.com/blog.html</loc>
+        <lastmod>2025-04-21</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Pricing Page -->
+    <url>
+        <loc>https://puribeach-resort.com/pricing.html</loc>
+        <lastmod>2025-04-24</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Location Page -->
+    <url>
+        <loc>https://puribeach-resort.com/location.html</loc>
+        <lastmod>2025-04-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Packages Page -->
+    <url>
+        <loc>https://puribeach-resort.com/packages.html</loc>
+        <lastmod>2025-04-24</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Blog Articles -->
+    <url>
+        <loc>https://puribeach-resort.com/blog/best-time-to-visit-puri.html</loc>
+        <lastmod>2025-04-21</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://puribeach-resort.com/blog/top-10-things-to-do-in-puri.html</loc>
+        <lastmod>2025-04-21</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://puribeach-resort.com/blog/why-choose-puri-beach-resort.html</loc>
+        <lastmod>2025-04-21</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://puribeach-resort.com/blog/jagannath-temple-guide.html</loc>
+        <lastmod>2025-04-21</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://puribeach-resort.com/blog/puri-beach-safety-tips.html</loc>
+        <lastmod>2025-04-21</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://puribeach-resort.com/blog/how-to-reach-puri.html</loc>
+        <lastmod>2025-04-21</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://puribeach-resort.com/blog/best-seafood-restaurants-puri.html</loc>
+        <lastmod>2025-04-21</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://puribeach-resort.com/blog/puri-vs-konark.html</loc>
+        <lastmod>2025-04-21</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+</urlset>

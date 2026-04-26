@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Primary Meta Tags -->
+    <title>Travel Blog - Puri Beach Resort</title>
+    <meta name="title" content="Travel Blog - Puri Beach Resort">
+    <meta name="description" content="Explore our travel guides, local tips, and insider knowledge about Puri, Odisha. Discover the best of Puri with our comprehensive travel articles.">
+    <meta name="keywords" content="Puri blog, Puri travel guide, Puri tourism blog, Puri travel tips, Odisha travel, Puri attractions, Jagannath Temple guide">
+    <meta name="author" content="Puri Beach Resort">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://puribeach-resort.com/blog.html">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://puribeach-resort.com/blog.html">
+    <meta property="og:title" content="Travel Blog - Puri Beach Resort">
+    <meta property="og:description" content="Explore our travel guides, local tips, and insider knowledge about Puri, Odisha.">
+    <meta property="og:image" content="https://puribeach-resort.com/images/pic1.jpeg">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary: #0a2540;
+            --secondary: #1e3a5f;
+            --accent: #c9a962;
+            --accent-light: #dfc78a;
+            --white: #ffffff;
+            --light: #f8f9fa;
+            --dark: #1a1a1a;
+            --gray: #6c757d;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--dark);
+            line-height: 1.8;
+            background: var(--light);
+        }
+        
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--primary);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        .blog-header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            padding: 80px 0 40px;
+            color: var(--white);
+            text-align: center;
+        }
+        
+        .blog-header h1 {
+            font-size: clamp(2rem, 5vw, 3rem);
+            margin-bottom: 20px;
+            color: var(--white);
+        }
+        
+        .blog-header p {
+            color: rgba(255,255,255,0.8);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .back-link {
+            display: inline-block;
+            color: var(--accent);
+            text-decoration: none;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        
+        .back-link:hover {
+            color: var(--accent-light);
+        }
+        
+        /* Content */
+        .blog-content {
+            background: var(--white);
+            padding: 60px 0;
+            margin: -40px auto 60px;
+            border-radius: 20px 20px 0 0;
+            box-shadow: 0 -10px 40px rgba(0,0,0,0.1);
+        }
+        
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .blog-card {
+            background: var(--light);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.4s ease;
+            cursor: pointer;
+        }
+        
+        .blog-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+        }
+        
+        .blog-card-header {
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+        }
+        
+        .blog-card-header.primary {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+        }
+        
+        .blog-card-header.accent {
+            background: linear-gradient(135deg, var(--accent) 0%, var(--accent-light) 100%);
+        }
+        
+        .blog-card-header.secondary {
+            background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 100%);
+        }
+        
+        .blog-card-header i {
+            font-size: 4rem;
+            opacity: 0.3;
+        }
+        
+        .blog-card-content {
+            padding: 30px;
+        }
+        
+        .blog-card-content span {
+            color: var(--accent);
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .blog-card-content h3 {
+            font-size: 1.4rem;
+            margin: 15px 0;
+            line-height: 1.4;
+        }
+        
+        .blog-card-content p {
+            color: var(--gray);
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+        
+        .blog-card-content a {
+            color: var(--accent);
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .blog-card-content a:hover {
+            color: var(--accent-light);
+        }
+        
+        /* Footer CTA */
+        .footer-cta {
+            background: var(--gradient-primary);
+            padding: 80px 0;
+            text-align: center;
+            color: var(--white);
+        }
+        
+        .footer-cta h2 {
+            color: var(--white);
+            margin-bottom: 20px;
+        }
+        
+        .footer-cta .btn-group {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        
+        .footer-cta a {
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .btn-call {
+            background: var(--accent);
+            color: var(--primary);
+        }
+        
+        .btn-whatsapp {
+            background: #25D366;
+            color: white;
+        }
+
+        /* Responsive Images */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        iframe {
+            max-width: 100%;
+        }
+
+        /* Responsive */
+        @media (max-width: 1920px) {
+            .container {
+                max-width: 1400px;
+            }
+        }
+
+        @media (max-width: 1440px) {
+            .container {
+                max-width: 1200px;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .container {
+                max-width: 100%;
+                padding: 0 20px;
+            }
+
+            .blog-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 15px;
+            }
+
+            .blog-header {
+                padding: 60px 0;
+            }
+
+            .blog-header h1 {
+                font-size: 2rem;
+            }
+
+            .blog-content {
+                padding: 40px 20px;
+                margin: 0;
+                border-radius: 0;
+            }
+
+            .blog-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-buttons {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .btn {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .blog-header h1 {
+                font-size: 1.75rem;
+            }
+
+            .blog-header p {
+                font-size: 0.9rem;
+            }
+
+            .blog-card {
+                margin-bottom: 20px;
+            }
+
+            .blog-card-content {
+                padding: 20px;
+            }
+        }
+
+        @media (max-width: 375px) {
+            .blog-header h1 {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width: 320px) {
+            .blog-header h1 {
+                font-size: 1.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="blog-header">
+        <div class="container">
+            <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Home</a>
+            <h1>Travel Blog</h1>
+            <p>Discover the best of Puri with our travel guides, local tips, and insider knowledge. Explore comprehensive articles about Puri, Odisha's cultural heritage, beach experiences, and spiritual journeys.</p>
+        </div>
+    </div>
+    
+    <div class="blog-content">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 40px;">Latest Articles</h2>
+            
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <div class="blog-card-header primary">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <div class="blog-card-content">
+                        <span>Travel Guide</span>
+                        <h3>Best Time to Visit Puri - Complete Guide</h3>
+                        <p>Discover the perfect time to visit Puri for beach relaxation, temple visits, and cultural experiences...</p>
+                        <a href="blog/best-time-to-visit-puri.html">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="blog-card">
+                    <div class="blog-card-header accent">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <div class="blog-card-content">
+                        <span>Things to Do</span>
+                        <h3>Top 10 Things to Do in Puri</h3>
+                        <p>From temple visits to beach activities, explore the top attractions and experiences in Puri...</p>
+                        <a href="blog/top-10-things-to-do-in-puri.html">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="blog-card">
+                    <div class="blog-card-header secondary">
+                        <i class="fas fa-om"></i>
+                    </div>
+                    <div class="blog-card-content">
+                        <span>Temple Guide</span>
+                        <h3>Complete Guide to Jagannath Temple</h3>
+                        <p>Everything you need to know about visiting the sacred Jagannath Temple in Puri...</p>
+                        <a href="blog/jagannath-temple-guide.html">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="blog-card">
+                    <div class="blog-card-header primary">
+                        <i class="fas fa-hotel"></i>
+                    </div>
+                    <div class="blog-card-content">
+                        <span>Hotel Guide</span>
+                        <h3>Why Choose Puri Beach Resort</h3>
+                        <p>Discover why Puri Beach Resort is the best hotel in Puri. From stunning sea views to premium amenities...</p>
+                        <a href="blog/why-choose-puri-beach-resort.html">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="blog-card">
+                    <div class="blog-card-header accent">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="blog-card-content">
+                        <span>Safety Tips</span>
+                        <h3>Puri Beach Safety Tips for Tourists</h3>
+                        <p>Essential safety tips for tourists visiting Puri Beach. Learn about swimming safety, sun protection...</p>
+                        <a href="blog/puri-beach-safety-tips.html">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="blog-card">
+                    <div class="blog-card-header secondary">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <div class="blog-card-content">
+                        <span>Travel Guide</span>
+                        <h3>How to Reach Puri by Train, Road, and Air</h3>
+                        <p>Complete travel guide on how to reach Puri by train, road, and air. Learn about transportation options...</p>
+                        <a href="blog/how-to-reach-puri.html">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="blog-card">
+                    <div class="blog-card-header primary">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <div class="blog-card-content">
+                        <span>Food Guide</span>
+                        <h3>Best Seafood Restaurants in Puri</h3>
+                        <p>Discover the best seafood restaurants in Puri serving fresh fish, crabs, prawns, and traditional Odisha cuisine...</p>
+                        <a href="blog/best-seafood-restaurants-puri.html">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="blog-card">
+                    <div class="blog-card-header accent">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <div class="blog-card-content">
+                        <span>Comparison</span>
+                        <h3>Puri vs Konark - Which to Visit First</h3>
+                        <p>Planning a trip to Odisha? Compare Puri and Konark to decide which to visit first...</p>
+                        <a href="blog/puri-vs-konark.html">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-cta">
+        <div class="container">
+            <h2>Plan Your Puri Trip with Us</h2>
+            <p>Stay at Puri Beach Resort for convenient access to all these amazing attractions from our prime beachfront location.</p>
+            <div class="btn-group">
+                <a href="tel:+918059815571" class="btn-call"><i class="fas fa-phone"></i> Call Now</a>
+                <a href="https://wa.me/918059815571" class="btn-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

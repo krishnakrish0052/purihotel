@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Primary Meta Tags -->
+    <title>Special Packages | Puri Beach Resort - Puri Beach Hotel Packages</title>
+    <meta name="title" content="Special Packages | Puri Beach Resort - Puri Beach Hotel Packages">
+    <meta name="description" content="Exclusive packages at Puri Beach Resort. Rath Yatra packages, family packages, weekend getaway packages. Best rates with swimming pool, AC, multi-cuisine restaurant included.">
+    <meta name="keywords" content="Puri beach hotel packages, Luxury stay in Puri Odisha, Puri holiday packages, Weekend getaway Puri, Puri Rath Yatra hotel booking, Puri Beach Festival accommodation, Puri Konark tour packages, Odisha tourism hotels, Puri weekend trip stay, Puri family accommodation">
+    <meta name="author" content="Puri Beach Resort">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://puribeach-resort.com/packages.html">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://puribeach-resort.com/packages.html">
+    <meta property="og:title" content="Special Packages | Puri Beach Resort">
+    <meta property="og:description" content="Exclusive packages at Puri Beach Resort. Rath Yatra packages, family packages, weekend getaway packages.">
+    <meta property="og:image" content="https://puribeach-resort.com/images/pic1.jpeg">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary-color: #0a2540;
+            --secondary-color: #c9a962;
+            --text-color: #333;
+            --light-bg: #f8f9fa;
+            --white: #ffffff;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+        }
+        
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--primary-color);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Navigation */
+        .navbar {
+            background: var(--primary-color);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            color: var(--white);
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: 600;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            color: var(--white);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: var(--secondary-color);
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(10, 37, 64, 0.8), rgba(10, 37, 64, 0.8)), url('https://puribeach-resort.com/images/pic1.jpeg');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 0;
+            text-align: center;
+            color: var(--white);
+        }
+        
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: var(--white);
+        }
+        
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        
+        /* Packages Section */
+        .packages {
+            padding: 80px 0;
+        }
+        
+        .packages h2 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 50px;
+        }
+        
+        .package-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+        
+        .package-card {
+            background: var(--white);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        
+        .package-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .package-card.featured {
+            border: 3px solid var(--secondary-color);
+        }
+        
+        .package-image {
+            height: 200px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 60px;
+        }
+        
+        .package-content {
+            padding: 30px;
+        }
+        
+        .package-content h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        
+        .package-content .duration {
+            color: var(--secondary-color);
+            font-weight: 600;
+            margin-bottom: 20px;
+            display: block;
+        }
+        
+        .package-content .price {
+            font-size: 36px;
+            color: var(--secondary-color);
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        
+        .package-content .price span {
+            font-size: 16px;
+            color: var(--text-color);
+            font-weight: 400;
+        }
+        
+        .package-content .original-price {
+            text-decoration: line-through;
+            color: #999;
+            font-size: 18px;
+            margin-left: 10px;
+        }
+        
+        .package-content .savings {
+            color: #28a745;
+            font-weight: 600;
+            margin-bottom: 20px;
+            display: block;
+        }
+        
+        .features {
+            list-style: none;
+            margin: 20px 0;
+        }
+        
+        .features li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .features li i {
+            color: var(--secondary-color);
+            margin-right: 10px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background: var(--secondary-color);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background 0.3s;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .btn:hover {
+            background: #b8954f;
+        }
+        
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--secondary-color);
+            color: var(--secondary-color);
+        }
+        
+        .btn-outline:hover {
+            background: var(--secondary-color);
+            color: var(--white);
+        }
+        
+        /* Special Offer Banner */
+        .special-offer {
+            background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+            color: var(--white);
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        .special-offer h3 {
+            color: var(--white);
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+        
+        .special-offer p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        
+        /* CTA Section */
+        .cta {
+            background: var(--primary-color);
+            padding: 80px 0;
+            text-align: center;
+            color: var(--white);
+        }
+        
+        .cta h2 {
+            color: var(--white);
+            margin-bottom: 20px;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        
+        /* Footer */
+        .footer {
+            background: #081b30;
+            color: var(--white);
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        /* Responsive Images */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        iframe {
+            max-width: 100%;
+        }
+
+        /* Responsive */
+        @media (max-width: 1920px) {
+            .container {
+                max-width: 1400px;
+            }
+        }
+
+        @media (max-width: 1440px) {
+            .container {
+                max-width: 1200px;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .container {
+                max-width: 100%;
+                padding: 0 20px;
+            }
+
+            .packages-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 15px;
+            }
+
+            .hero {
+                padding: 80px 0;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .section {
+                padding: 80px 0;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .packages-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .btn {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 1.75rem;
+            }
+
+            .section {
+                padding: 60px 0;
+            }
+
+            .package-card {
+                padding: 30px 20px;
+            }
+        }
+
+        @media (max-width: 375px) {
+            .hero h1 {
+                font-size: 1.5rem;
+            }
+
+            .logo {
+                font-size: 1.2rem;
+            }
+        }
+
+        @media (max-width: 320px) {
+            .hero h1 {
+                font-size: 1.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="index.html" class="logo">
+                <i class="fas fa-umbrella-beach"></i> Puri Beach Resort
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="packages.html" style="color: var(--secondary-color);">Packages</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Special Packages & Offers</h1>
+            <p>Exclusive deals for your perfect Puri getaway. Book now for best rates!</p>
+        </div>
+    </section>
+
+    <!-- Special Offer Banner -->
+    <section class="special-offer">
+        <div class="container">
+            <h3><i class="fas fa-fire"></i> Limited Time Offer!</h3>
+            <p>Book any package this month and get 15% OFF + FREE breakfast!</p>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section class="packages">
+        <div class="container">
+            <h2>Choose Your Perfect Package</h2>
+            <div class="package-grid">
+                <!-- Weekend Getaway Package -->
+                <div class="package-card">
+                    <div class="package-image">
+                        <i class="fas fa-umbrella-beach"></i>
+                    </div>
+                    <div class="package-content">
+                        <h3>Weekend Getaway</h3>
+                        <span class="duration">2 Nights / 3 Days</span>
+                        <div class="price">₹5,999<span>/couple</span></div>
+                        <span class="original-price">₹7,199</span>
+                        <span class="savings">Save ₹1,200!</span>
+                        <ul class="features">
+                            <li><i class="fas fa-check"></i> Deluxe Sea View Room</li>
+                            <li><i class="fas fa-check"></i> Daily Breakfast</li>
+                            <li><i class="fas fa-check"></i> One Complimentary Dinner</li>
+                            <li><i class="fas fa-check"></i> Beach Side Walk</li>
+                            <li><i class="fas fa-check"></i> Free WiFi</li>
+                            <li><i class="fas fa-check"></i> 24/7 Room Service</li>
+                        </ul>
+                        <a href="tel:+918059815571" class="btn" onclick="trackPhoneCall()">
+                            Book Now
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Family Package -->
+                <div class="package-card featured">
+                    <div class="package-image">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="package-content">
+                        <h3>Family Package</h3>
+                        <span class="duration">3 Nights / 4 Days</span>
+                        <div class="price">₹9,999<span>/family</span></div>
+                        <span class="original-price">₹12,499</span>
+                        <span class="savings">Save ₹2,500!</span>
+                        <ul class="features">
+                            <li><i class="fas fa-check"></i> 2 Deluxe Rooms</li>
+                            <li><i class="fas fa-check"></i> All Meals Included</li>
+                            <li><i class="fas fa-check"></i> Jagannath Temple Visit</li>
+                            <li><i class="fas fa-check"></i> Konark Temple Tour</li>
+                            <li><i class="fas fa-check"></i> Free WiFi</li>
+                            <li><i class="fas fa-check"></i> Kids Welcome</li>
+                            <li><i class="fas fa-check"></i> Airport/Railway Pickup</li>
+                        </ul>
+                        <a href="tel:+918059815571" class="btn" onclick="trackPhoneCall()">
+                            Book Now
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Rath Yatra Package -->
+                <div class="package-card">
+                    <div class="package-image">
+                        <i class="fas fa-om"></i>
+                    </div>
+                    <div class="package-content">
+                        <h3>Rath Yatra Special</h3>
+                        <span class="duration">4 Nights / 5 Days</span>
+                        <div class="price">₹14,999<span>/couple</span></div>
+                        <span class="original-price">₹18,999</span>
+                        <span class="savings">Save ₹4,000!</span>
+                        <ul class="features">
+                            <li><i class="fas fa-check"></i> Premium Suite</li>
+                            <li><i class="fas fa-check"></i> All Meals Included</li>
+                            <li><i class="fas fa-check"></i> VIP Rath Yatra View</li>
+                            <li><i class="fas fa-check"></i> Temple Guide</li>
+                            <li><i class="fas fa-check"></i> Special Prasad</li>
+                            <li><i class="fas fa-check"></i> Free WiFi</li>
+                            <li><i class="fas fa-check"></i> 24/7 Room Service</li>
+                        </ul>
+                        <a href="tel:+918059815571" class="btn" onclick="trackPhoneCall()">
+                            Book Now
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Couple Package -->
+                <div class="package-card">
+                    <div class="package-image">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="package-content">
+                        <h3>Romantic Escape</h3>
+                        <span class="duration">2 Nights / 3 Days</span>
+                        <div class="price">₹6,499<span>/couple</span></div>
+                        <span class="original-price">₹8,199</span>
+                        <span class="savings">Save ₹1,700!</span>
+                        <ul class="features">
+                            <li><i class="fas fa-check"></i> Suite with Balcony</li>
+                            <li><i class="fas fa-check"></i> Candle Light Dinner</li>
+                            <li><i class="fas fa-check"></i> Flower Decoration</li>
+                            <li><i class="fas fa-check"></i> Beach Side Dinner</li>
+                            <li><i class="fas fa-check"></i> Free WiFi</li>
+                            <li><i class="fas fa-check"></i> Late Check-out</li>
+                        </ul>
+                        <a href="tel:+918059815571" class="btn" onclick="trackPhoneCall()">
+                            Book Now
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Konark Tour Package -->
+                <div class="package-card">
+                    <div class="package-image">
+                        <i class="fas fa-monument"></i>
+                    </div>
+                    <div class="package-content">
+                        <h3>Konark Temple Tour</h3>
+                        <span class="duration">2 Nights / 3 Days</span>
+                        <div class="price">₹7,999<span>/couple</span></div>
+                        <span class="original-price">₹9,999</span>
+                        <span class="savings">Save ₹2,000!</span>
+                        <ul class="features">
+                            <li><i class="fas fa-check"></i> Deluxe Room</li>
+                            <li><i class="fas fa-check"></i> Daily Breakfast</li>
+                            <li><i class="fas fa-check"></i> Konark Temple Tour</li>
+                            <li><i class="fas fa-check"></i> Guide Service</li>
+                            <li><i class="fas fa-check"></i> Transportation</li>
+                            <li><i class="fas fa-check"></i> Free WiFi</li>
+                        </ul>
+                        <a href="tel:+918059815571" class="btn" onclick="trackPhoneCall()">
+                            Book Now
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Corporate Package -->
+                <div class="package-card">
+                    <div class="package-image">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="package-content">
+                        <h3>Corporate Stay</h3>
+                        <span class="duration">Custom Duration</span>
+                        <div class="price">₹2,499<span>/night</span></div>
+                        <span class="original-price">₹2,999</span>
+                        <span class="savings">Save ₹500/night!</span>
+                        <ul class="features">
+                            <li><i class="fas fa-check"></i> Standard Room</li>
+                            <li><i class="fas fa-check"></i> Breakfast Included</li>
+                            <li><i class="fas fa-check"></i> High-Speed WiFi</li>
+                            <li><i class="fas fa-check"></i> Work Desk</li>
+                            <li><i class="fas fa-check"></i> Meeting Room Access</li>
+                            <li><i class="fas fa-check"></i> 24/7 Room Service</li>
+                            <li><i class="fas fa-check"></i> Invoice Facility</li>
+                        </ul>
+                        <a href="tel:+918059815571" class="btn" onclick="trackPhoneCall()">
+                            Book Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Custom Package Available!</h2>
+            <p>Have specific requirements? Call us to create a custom package tailored to your needs.</p>
+            <div class="cta-buttons">
+                <a href="tel:+918059815571" class="btn" onclick="trackPhoneCall()">
+                    <i class="fas fa-phone"></i> Call +91 8059815571
+                </a>
+                <a href="https://wa.me/918059815571" class="btn btn-outline" onclick="trackWhatsAppClick()">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Puri Beach Resort. All rights reserved.</p>
+            <p>Marine Drive Road, Near Light House, Swargadwar, Puri, Odisha 752001</p>
+        </div>
+    </footer>
+
+    <!-- Google Analytics -->
+    <script>
+        // Conversion tracking functions
+        function trackPhoneCall() {
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'phone_call', {
+                    'event_category': 'contact',
+                    'event_label': 'phone_click',
+                    'phone_number': '+91 8059815571'
+                });
+                console.log('Phone call tracked');
+            }
+        }
+        
+        function trackWhatsAppClick() {
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'whatsapp_click', {
+                    'event_category': 'contact',
+                    'event_label': 'whatsapp_click',
+                    'phone_number': '+91 8059815571'
+                });
+                console.log('WhatsApp click tracked');
+            }
+        }
+    </script>
+</body>
+</html>
