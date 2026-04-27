@@ -33,7 +33,6 @@ A fully responsive, modern website for Puri Beach Resort, a luxury beachfront ho
 - **Analytics**: Google Analytics 4 and Google Ads conversion tracking
 - **Performance**: Optimized images, lazy loading, and efficient CSS
 - **Accessibility**: Semantic HTML and keyboard navigation support
-- **Performance Monitoring**: Lighthouse and PageSpeed Insights integration
 
 ## Technology Stack
 
@@ -66,35 +65,6 @@ hotel/
 │   └── why-choose-puri-beach-resort.html
 └── images/                 # Website images
 ```
-
-## Performance Monitoring
-
-### Lighthouse Audits
-The project includes scripts for monitoring website performance using Google Lighthouse and PageSpeed Insights:
-
-#### Option 1: PageSpeed Insights API (Recommended)
-1. Get an API key from [Google Developers Console](https://developers.google.com/speed/docs/insights/v5/get-started)
-2. Add the API key to `run-lighthouse.sh`
-3. Run the script:
-   ```bash
-   ./run-lighthouse.sh
-   ```
-4. Reports are saved in `lighthouse-reports/` directory
-
-#### Option 2: Local Lighthouse (Requires Chrome)
-1. Install dependencies:
-   ```bash
-   npm install -g lighthouse
-   npm install chrome-launcher
-   ```
-2. Run the Node.js script:
-   ```bash
-   node lighthouse-audit.js
-   ```
-3. Reports are saved in `lighthouse-reports/` directory
-
-#### Automated Monitoring
-For continuous monitoring, set up a cron job or CI/CD pipeline to run these scripts periodically and track performance trends.
 
 ## Deployment
 
