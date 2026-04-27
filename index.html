@@ -17,7 +17,7 @@
     <meta name="theme-color" content="#0a2540">
     
     <!-- Content Security Policy for Google Analytics and Google Ads -->
-    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://ssl.google-analytics.com https://stats.g.doubleclick.net https://www.gstatic.com https://fonts.googleapis.com https://cdnjs.cloudflare.com https://googleads.g.doubleclick.net; img-src 'self' data: https: https://www.google-analytics.com https://ssl.google-analytics.com https://stats.g.doubleclick.net; connect-src 'self' https://www.google-analytics.com https://stats.g.doubleclick.net https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com https://cdnjs.cloudflare.com">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://ssl.google-analytics.com https://stats.g.doubleclick.net https://www.gstatic.com https://fonts.googleapis.com https://cdnjs.cloudflare.com https://googleads.g.doubleclick.net https://www.google.com https://www.googleadservices.com; img-src 'self' data: https: https://www.google-analytics.com https://ssl.google-analytics.com https://stats.g.doubleclick.net; connect-src 'self' https://www.google-analytics.com https://stats.g.doubleclick.net https://www.googletagmanager.com https://www.google.com https://www.googleadservices.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com https://cdnjs.cloudflare.com">
     
     <!-- Canonical URL -->
     <link rel="canonical" href="https://puribeach-resort.com/">
@@ -50,8 +50,8 @@
     <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
     
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
     
     <!-- Google tag (gtag.js) - Google Ads -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18111151791"></script>
@@ -59,18 +59,6 @@
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'AW-18111151791');
-    </script>
-    
-    <!-- Google Analytics 4 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SKK54JPMWS"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-SKK54JPMWS');
-        
-        // Google Ads Conversion Tracking
         gtag('config', 'AW-18111151791');
         
         // Event tracking for phone calls
@@ -1657,7 +1645,7 @@
                     <i class="fas fa-phone-alt"></i>
                     Call Now
                 </a>
-                <a href="https://wa.me/918059815571" class="nav-btn" style="background: #25D366; color: white;" onclick="trackWhatsAppClick()">
+                <a href="https://wa.me/918059815571" class="nav-btn" style="background: #128C7E; color: white;" onclick="trackWhatsAppClick()">
                     <i class="fab fa-whatsapp"></i>
                     WhatsApp
                 </a>
@@ -1710,12 +1698,13 @@
         </div>
     </section>
 
+    <main>
     <!-- About Section -->
     <section class="about" id="about">
         <div class="container">
             <div class="about-grid">
                 <div class="about-image fade-in">
-                    <img src="images/pic2.jpeg" alt="Hotel Puri Beach Resorts exterior view with beautiful architecture and modern facilities" loading="lazy">
+                    <img src="images/pic2.jpeg" alt="Hotel Puri Beach Resorts exterior view with beautiful architecture and modern facilities" loading="lazy" width="550" height="413">
                 </div>
                 <div class="about-content fade-in">
                     <span class="about-tag">About Our Resort</span>
@@ -1829,37 +1818,37 @@
             </div>
             <div class="gallery-grid">
                 <div class="gallery-item fade-in">
-                    <img src="images/pic3.jpeg" alt="Beautiful golden sand beach at Puri with crystal clear blue water and peaceful atmosphere" loading="lazy">
+                    <img src="images/pic3.jpeg" alt="Beautiful golden sand beach at Puri with crystal clear blue water and peaceful atmosphere" loading="lazy" width="400" height="300">
                     <div class="gallery-overlay">
                         <i class="fas fa-expand"></i>
                     </div>
                 </div>
                 <div class="gallery-item fade-in">
-                    <img src="images/pic4.jpeg" alt="Swimming pool at Hotel Puri Beach Resorts with sun loungers and relaxation area" loading="lazy">
+                    <img src="images/pic4.jpeg" alt="Swimming pool at Hotel Puri Beach Resorts with sun loungers and relaxation area" loading="lazy" width="400" height="300">
                     <div class="gallery-overlay">
                         <i class="fas fa-expand"></i>
                     </div>
                 </div>
                 <div class="gallery-item fade-in">
-                    <img src="images/pic5.jpeg" alt="Luxury AC room interior with modern amenities and comfortable bedding at Puri Beach Resorts" loading="lazy">
+                    <img src="images/pic5.jpeg" alt="Luxury AC room interior with modern amenities and comfortable bedding at Puri Beach Resorts" loading="lazy" width="400" height="300">
                     <div class="gallery-overlay">
                         <i class="fas fa-expand"></i>
                     </div>
                 </div>
                 <div class="gallery-item fade-in">
-                    <img src="images/pic6.jpeg" alt="Multi-cuisine restaurant at Hotel Puri Beach Resorts serving delicious local and international dishes" loading="lazy">
+                    <img src="images/pic6.jpeg" alt="Multi-cuisine restaurant at Hotel Puri Beach Resorts serving delicious local and international dishes" loading="lazy" width="400" height="300">
                     <div class="gallery-overlay">
                         <i class="fas fa-expand"></i>
                     </div>
                 </div>
                 <div class="gallery-item fade-in">
-                    <img src="images/pic7.jpeg" alt="Stunning sunset view over Bay of Bengal from Hotel Puri Beach Resorts" loading="lazy">
+                    <img src="images/pic7.jpeg" alt="Stunning sunset view over Bay of Bengal from Hotel Puri Beach Resorts" loading="lazy" width="400" height="300">
                     <div class="gallery-overlay">
                         <i class="fas fa-expand"></i>
                     </div>
                 </div>
                 <div class="gallery-item fade-in">
-                    <img src="images/pic8.jpeg" alt="Scenic beach view near Swargadwar Puri with ocean waves and sandy shore" loading="lazy">
+                    <img src="images/pic8.jpeg" alt="Scenic beach view near Swargadwar Puri with ocean waves and sandy shore" loading="lazy" width="400" height="300">
                     <div class="gallery-overlay">
                         <i class="fas fa-expand"></i>
                     </div>
@@ -1885,7 +1874,7 @@
                         <span style="color: var(--accent); font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">Travel Guide</span>
                         <h3 style="font-size: 1.4rem; margin: 15px 0; color: var(--primary); font-weight: 700; line-height: 1.4;">Best Time to Visit Puri - Complete Guide</h3>
                         <p style="color: var(--gray); font-size: 0.95rem; line-height: 1.7; margin-bottom: 20px;">Discover the perfect time to visit Puri for beach relaxation, temple visits, and cultural experiences...</p>
-                        <a href="blog/best-time-to-visit-puri.html" style="color: var(--accent); font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right"></i></a>
+                        <a href="blog/best-time-to-visit-puri.html" style="color: var(--accent); font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;">Read more about Best Time to Visit Puri <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="blog-card fade-in" style="background: var(--white); border-radius: 20px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: all 0.4s ease; cursor: pointer;" onmouseover="this.style.transform='translateY(-10px) scale(1.02)'" onmouseout="this.style.transform='translateY(0) scale(1)'">
@@ -1896,7 +1885,7 @@
                         <span style="color: var(--accent); font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">Things to Do</span>
                         <h3 style="font-size: 1.4rem; margin: 15px 0; color: var(--primary); font-weight: 700; line-height: 1.4;">Top 10 Things to Do in Puri</h3>
                         <p style="color: var(--gray); font-size: 0.95rem; line-height: 1.7; margin-bottom: 20px;">From temple visits to beach activities, explore the top attractions and experiences in Puri...</p>
-                        <a href="blog/top-10-things-to-do-in-puri.html" style="color: var(--accent); font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right"></i></a>
+                        <a href="blog/top-10-things-to-do-in-puri.html" style="color: var(--accent); font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;">Read more about Top 10 Things to Do in Puri <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="blog-card fade-in" style="background: var(--white); border-radius: 20px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: all 0.4s ease; cursor: pointer;" onmouseover="this.style.transform='translateY(-10px) scale(1.02)'" onmouseout="this.style.transform='translateY(0) scale(1)'">
@@ -1907,7 +1896,7 @@
                         <span style="color: var(--accent); font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">Temple Guide</span>
                         <h3 style="font-size: 1.4rem; margin: 15px 0; color: var(--primary); font-weight: 700; line-height: 1.4;">Complete Guide to Jagannath Temple</h3>
                         <p style="color: var(--gray); font-size: 0.95rem; line-height: 1.7; margin-bottom: 20px;">Everything you need to know about visiting the sacred Jagannath Temple in Puri...</p>
-                        <a href="blog/jagannath-temple-guide.html" style="color: var(--accent); font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right"></i></a>
+                        <a href="blog/jagannath-temple-guide.html" style="color: var(--accent); font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;">Read more about Jagannath Temple Guide <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -1931,7 +1920,7 @@
                     <div style="display: flex; align-items: center; gap: 15px;">
                         <div style="width: 50px; height: 50px; background: var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--primary); font-weight: 700; font-size: 1.2rem;">RK</div>
                         <div>
-                            <h4 style="color: var(--white); font-size: 1rem; margin-bottom: 5px;">Rajesh Kumar</h4>
+                            <span style="color: var(--white); font-size: 1rem; font-weight: 600; margin-bottom: 5px; display: block;">Rajesh Kumar</span>
                             <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.85rem;">Kolkata, West Bengal</p>
                         </div>
                     </div>
@@ -1942,7 +1931,7 @@
                     <div style="display: flex; align-items: center; gap: 15px;">
                         <div style="width: 50px; height: 50px; background: var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--primary); font-weight: 700; font-size: 1.2rem;">SP</div>
                         <div>
-                            <h4 style="color: var(--white); font-size: 1rem; margin-bottom: 5px;">Sunita Patel</h4>
+                            <span style="color: var(--white); font-size: 1rem; font-weight: 600; margin-bottom: 5px; display: block;">Sunita Patel</span>
                             <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.85rem;">Bhubaneswar, Odisha</p>
                         </div>
                     </div>
@@ -1953,7 +1942,7 @@
                     <div style="display: flex; align-items: center; gap: 15px;">
                         <div style="width: 50px; height: 50px; background: var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--primary); font-weight: 700; font-size: 1.2rem;">AM</div>
                         <div>
-                            <h4 style="color: var(--white); font-size: 1rem; margin-bottom: 5px;">Amit Mehta</h4>
+                            <span style="color: var(--white); font-size: 1rem; font-weight: 600; margin-bottom: 5px; display: block;">Amit Mehta</span>
                             <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.85rem;">Delhi</p>
                         </div>
                     </div>
@@ -1976,7 +1965,8 @@
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3742.0!2d85.806818!3d19.790081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDQ3JzI0LjMiTiA4NcKwNDgnMjQuNSJF!5e0!3m2!1sen!2sin!4v1714123456789!5m2!1sen!2sin"
                     allowfullscreen=""
                     loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Google Map showing location of Puri Beach Resort in Puri, Odisha">
                 </iframe>
             </div>
             <div style="text-align: center; margin-top: 40px;">
@@ -2028,6 +2018,7 @@
             </div>
         </div>
     </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
